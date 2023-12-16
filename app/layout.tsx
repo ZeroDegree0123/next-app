@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import React, { Suspense } from 'react'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from './NavBar'
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en" data-theme="winter">
       <body className={inter.className}>
         <NavBar />
-        <main className='p-5'>{children}</main>
+        <main className='p-5'>
+          {children}
+        </main>
       </body>
     </html>
   )
