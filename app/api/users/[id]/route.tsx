@@ -35,7 +35,7 @@ export async function DELETE(request: NextRequest, { params }: { params: { id: n
     // Fetch user from db
 
     // If not found, return 404
-    if (params.id > 10) return NextResponse.json({ error: 'User not found' }, { status: 404 })
+    if (params.id > 10) return NextResponse.json({ error: 'User not found' }, { status: 404 });
     // Delete the user 
     // Return 200
     return NextResponse.json({})
