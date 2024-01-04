@@ -19,7 +19,6 @@ const UploadPage = () => {
                 options={{
                     sources: ['local', 'url'],
                     maxFiles: 5,
-
                 }}
                 onUpload={(result, widget) => {
                     if (result.event !== 'success') return;
