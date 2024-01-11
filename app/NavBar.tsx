@@ -23,4 +23,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar;
